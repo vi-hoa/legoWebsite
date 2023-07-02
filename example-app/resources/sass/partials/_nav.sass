@@ -1,0 +1,50 @@
+.menu 
+    background: $primary
+    height: 61px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 25px
+
+    .logo
+        height: 46px
+    ul
+        list-style: none
+        display: flex
+        align-items: center
+        margin: 0
+        gap: 30px 
+
+        li 
+            a 
+                color: #fff
+                height: 46px
+                width: 46px
+                font-size: 22px
+                background: #570bd7
+                display: flex
+                border-radius: 50%
+                justify-content: center
+                align-items: center
+                text-decoration: none
+                transition: all 0.5s ease
+                position: relative
+
+                .info-count
+                    width: 20px
+                    height: 20px
+                    border-radius: 50%
+                    position: relative
+                    justify-content: center
+                    align-items: center
+                    display: flex
+                    font-size: 12px 
+                    background: #ff36f7
+                    top: 0
+                    right: 0
+                    transform: translate(20%, -20%)
+                    color: #fff
+
+                &:hover
+                    background: #fff
+                    color: $primary
