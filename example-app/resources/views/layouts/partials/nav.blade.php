@@ -6,7 +6,7 @@
     display: flex;;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25px;
+    padding: 45px;
     }
     
     .logo {
@@ -54,7 +54,8 @@
 
 <nav class="menu">
     <a href="{{route('home')}}">
-        <img class="logo" src="{{asset('img/logo.svg')}}" alt="">
+        {{-- <img class="logo" src="{{asset('img/logo.svg')}}" alt=""> --}}
+        <h2 style="color: #570bd7; font-family:'Berlin Sans FB', Demi;">TheBrickKingdom</h2>
     </a>
     <ul>
         <li>

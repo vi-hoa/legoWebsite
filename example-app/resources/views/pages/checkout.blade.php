@@ -257,4 +257,5 @@
             }
         }
     </script>
+    @include('pages.components.footer')
 @endsection

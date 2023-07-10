@@ -21,7 +21,7 @@ return new class extends Migration
             $table->unsignedInteger('category_id');
             $table->string('image')->nullable();
             $table->timestamps();
-            //$table->softDeletes();
+            $table->softDeletes();
         });
     }
 

@@ -195,4 +195,5 @@
             </div>
         </div>
     </div>
+    @include('pages.components.footer')
 @endsection

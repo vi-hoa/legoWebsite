@@ -1,22 +1,35 @@
 <style>
     .page-header {
-        background: linear-gradient(to bottom, rgb(202, 39, 107), #d38eff);
+        /* background: linear-gradient(to bottom, rgb(202, 39, 107), #d38eff); */
+        background-image: url(https://thumbs.dreamstime.com/b/vibrant-meccano-puzzle-kit-set-light-white-paper-backdrop-freehand-line-dark-black-color-ink-hand-drawn-design-object-logo-152473486.jpg);
+        
         padding: 100px 25px 120px;
         justify-content: center;
         text-align: center;
         flex-direction: column;
         border-radius: 2px 2px 50% 50%;
-        color: #fff;
+        /* color: #fff; */
     }
 
     h1 {
+        font-family: Bahnschrift, SemiBold, SemiConden;
+
         font-size: 50px;
         font-weight: bold;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        /* background-color: rgba(255, 255, 255, 0.8); ; */
+
+            color: #9681EB;
     }
 
     h3 {
+        font-family: Bahnschrift, SemiBold, SemiConden;
         font-size: 40px;
         font-weight: bold;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        /* background-color: rgba(255, 255, 255, 0.8); ; */
+
+            color: #9681EB;
     }
 
     .cart-page {
@@ -230,4 +243,5 @@
             </div>
         </div>
     </main>
+    @include('pages.components.footer')
 @endsection
