@@ -11,9 +11,11 @@
         /* //flex: wrap; */
     }
     .product-page-image {
-        width: 50%;
+        height: 300px;
+        width: auto;
         justify-content: center;
         align-items: center;
+
     }
     .product-page-details {
         max-width: 600px;
@@ -165,7 +167,7 @@
         <div class="container">
             <div class="product-page-row">
                 <section class="product-page-image">
-                    <img src="{{asset('storage/' . $product->image)}}" alt="">
+                    <img src="{{asset('public/' . $product->image)}}" alt="TOY">
                 </section>
                 <section class="product-page-details">
                     <p class="p-title" style="">{{$product->title}}</p>

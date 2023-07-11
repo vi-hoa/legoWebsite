@@ -8,8 +8,10 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
+
 class ProductController extends Controller
 {
+    
     public function index()
     {
         $products = Product::with('category', 'colors')->orderBy('created_at', 'desc')->get();
