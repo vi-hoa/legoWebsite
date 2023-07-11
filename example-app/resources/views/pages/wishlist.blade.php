@@ -39,4 +39,5 @@
             <x-product-box :product="$product" />
         @endforeach
     </div>
+    @include('pages.components.footer')
 @endsection

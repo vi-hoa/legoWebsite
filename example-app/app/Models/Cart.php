@@ -11,7 +11,7 @@ class Cart
     }
 
     public static function unitPrice($item){
-        return (new self)->calculatePrice($item['product']['price']) * $item['quantity'];
+        return (new self)->calculatePrice($item['product']['price'] ?? 0) * $item['quantity'];
     }
 
     public static function totalAmount(){

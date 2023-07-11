@@ -50,7 +50,14 @@ Route::post('/register',[AuthController::class,'postRegister'])->name('register'
 Route::post('/login',[AuthController::class,'postLogin'])->name('login')->middleware('guest');
 Route::post('/logout',[AuthController::class,'logout'])->name('logout')->middleware('auth');
 
-//admin routes
+Route::get('/password/reset', [AuthController::class, 'showResetPasswordForm'])->name('password.request');
+    Route::post('/password/email', [AuthController::class, 'sendResetLink'])->name('password.email');
+    Route::get('/password/reset/{token}', [AuthController::class, 'showResetPasswordForm'])->name('password.reset');
+    Route::post('/password/reset', [AuthController::class, 'resetPassword'])->name('password.update');
+    Route::get('/password/reset', [AuthController::class, 'showResetPasswordForm'])->name('password.request');
+
+
+    //admin routes
 //Route::get('/adminpanel',[AdminController::class,'dashboard'])->name('adminpanel')->middleware('auth');
 
 Route::group(['prefix' => 'adminpanel', 'middleware' => 'admin'], function(){
@@ -79,6 +86,7 @@ Route::group(['prefix' => 'adminpanel', 'middleware' => 'admin'], function(){
         Route::delete('/{id}',[ColorController::class,'destroy'])->name('adminpanel.color.destroy');
     });
 
+    
 });
 
 

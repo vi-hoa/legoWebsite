@@ -1,7 +1,9 @@
 <style>
     .login-page {
         min-height: 100vh;
-        background: #f5f5f5;
+        /* background: #f5f5f5; */
+        background-image: url(https://thumbs.dreamstime.com/b/vibrant-meccano-puzzle-kit-set-light-white-paper-backdrop-freehand-line-dark-black-color-ink-hand-drawn-design-object-logo-152473486.jpg);
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,7 +21,9 @@
         font-weight: 600;
         text-align: center;
         margin-bottom: 30px;
-        color: purple;
+        color: #9681EB;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
     }
     .filed {
         margin-bottom: 25px;
@@ -95,4 +99,5 @@
             </div>
         </div>
     </section>
+    @include('pages.components.footer')
 @endsection

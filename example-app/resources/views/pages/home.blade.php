@@ -39,4 +39,6 @@
         </section>
         
    </main>
+
+@include('pages.components.footer')
 @endsection
