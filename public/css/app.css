@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  padding: 10px 35px;
+  border-radius: 300px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4 ease;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #6100ff;
+}
+.btn-primary:hover {
+  background: #260064;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  background: #6100ff;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.menu .logo {
+  height: 46px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 30px;
+}
+.menu ul li a {
+  color: #fff;
+  height: 46px;
+  width: 46px;
+  font-size: 22px;
+  background: #570bd7;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.menu ul li a .info-count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  background: #ff36f7;
+  top: 0;
+  right: 0;
+  transform: translate(20%, -20%);
+  color: #fff;
+}
+.menu ul li a:hover {
+  background: #fff;
+  color: #6100ff;
+}
+
+.home-header {
+  background: #000;
+  padding: 100px 25px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 50% 50%;
+}
+.home-header .home-header-text {
+  text-align: center;
+  color: #fff;
+}
+.home-header .home-header-text .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.home-header .home-header-text .tagline {
+  font-size: 20px;
+  font-weight: 300;
+}
+.home-header .home-header-search {
+  margin-top: 20px;
+}
+.home-header .home-header-search input {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 300px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid;
+}
+.home-header .home-header-search input:focus {
+  outline: none;
+}
+
+.products-section {
+  padding: 70px;
+}
+.products-section .section-title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #260064;
+}
+
+.products-row {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.login-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page .login-form-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 100%;
+}
+.login-page .login-form-box .login-title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #260064;
+}
+.login-page .login-form-box .filed {
+  margin-bottom: 25px;
+}
+.login-page .login-form-box .filed input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 100pxpx;
+  border: 1px solid #ddd;
+}
+.login-page .login-form-box .filed .has-error {
+  border-color: #e91e1e;
+}
+.login-page .login-form-box .field-error {
+  color: #e91e1e;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.account-page {
+  padding: 50px 15px;
+}
+
+.product-box {
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 8px 40px 0 rgba(49, 32, 138, 0.05);
+  text-align: center;
+  width: 270px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.product-box:hover {
+  box-shadow: 0 10px 50px 2px rgba(0, 0, 0, 0.15);
+}
+.product-box:hover .image {
+  background: linear-gradient(to bottom right, #6100ff, #fb2e86);
+}
+.product-box .image {
+  background: #f6f7fb;
+  height: 230px;
+  width: 270px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: all 0.4s ease;
+}
+.product-box .product-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fb2e86;
+  margin-bottom: 10px;
+}
+.product-box .color-plateletes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.product-box .color-plateletes .color-platelete {
+  width: 20px;
+  height: 5px;
+  border-radius: 12px;
+  background: #000;
+}
+.product-box .product-category {
+  color: #6f6f6f;
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.product-box .product-price {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #260064;
+}
